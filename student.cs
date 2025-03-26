@@ -16,6 +16,11 @@ namespace Library_Management_System
             this.major = major;
             this.graduation_year = graduation_year;
         }
-    }
+        public void display() 
+        {
+            
+            Console.WriteLine("Major : ", major  );
+            Console.WriteLine("Graduation Year : ", graduation_year);
+        }
     
 }

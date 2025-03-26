@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Library_Management_System
+﻿namespace Library_Management_System
 {
         public class Book
         {
@@ -21,14 +15,20 @@ namespace Library_Management_System
                 AvailableCopies = availableCopies;
             }
 
-            public bool BorrowBook()
+            public bool BorrowBook(string borrowerName, string bookTitle)
             {
                 if (AvailableCopies > 0)
                 {
                     AvailableCopies--;
+                    Console.WriteLine($"{borrowerName} borrowed '{bookTitle}'");
                     return true;
                 }
                 return false;
+            }
+
+            public void ReturnBook()
+            {
+                AvailableCopies++;
             }
         }
 
@@ -59,4 +59,5 @@ namespace Library_Management_System
             }
         }
 
-    }
+}
+

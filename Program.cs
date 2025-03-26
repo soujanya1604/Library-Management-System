@@ -21,8 +21,9 @@
 
             Console.WriteLine("Borrowing Books...");
             library.Books[1].BorrowBook("Sandeep", library.Books[1].Title); 
-            library.Books[2].BorrowBook("Akhil", library.Books[2].Title); 
+            library.Books[2].BorrowBook("Akhil", library.Books[2].Title);
 
+            Console.WriteLine();
             Console.WriteLine("Books after borrowing:");
             library.DisplayBooks();
         }

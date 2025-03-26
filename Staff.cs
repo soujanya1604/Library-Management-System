@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library_Management_System
 {
-    class Staff
-    {
+
         // Derived class: Staff
         public class Staff : Person
         {
@@ -21,5 +20,4 @@ namespace Library_Management_System
                 Department = department;
             }
         }
-    }
 }

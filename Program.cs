@@ -12,8 +12,8 @@
             library.Books.Add(new Book("Analytics in Action", "Nathan Brooks", "ISBN333", 6));
 
             // Adding patrons
-            library.Person.Add(new student("Akhil", "akhil@usf.edu", "S001", "Business Analytics", "2026"));
-            library.Person.Add(new student("Sandeep", "sandeep@usf.edu", "S002", "Information Systems", "2025"));
+            library.Person.Add(new Student("Akhil", "akhil@usf.edu", "S001", "Business Analytics", "2026"));
+            library.Person.Add(new Student("Sandeep", "sandeep@usf.edu", "S002", "Information Systems", "2025"));
             library.Person.Add(new Staff("Grandon Gill", "grandon@usf.edu", "ST001", "Librarian", "Library Services"));
 
             library.DisplayBooks();
